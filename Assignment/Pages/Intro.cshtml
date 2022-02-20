@@ -1,0 +1,42 @@
+﻿@page
+@model Assignment.Pages.IntroModel
+@{
+    ViewData["Title"] = "Intro";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+
+@section featured
+    {
+    <section class="featured">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    </section>
+}
+
+<h3>Kavya</h3>
+
+<form>
+
+    <div style="margin-top:35px;">
+        <label style="width:120px;">First Name:</label><input id="txtFirstName" type="text" />
+    </div>
+    <div>
+        <label style="width:120px;">Last Name:</label><input id="txtLastName" type="text" />
+    </div>
+    <div>
+        <label style="width:120px;">Mobile:</label><input id="txtMobile" type="number" />
+    </div>
+    <div>
+        <label style="width:120px;">Email:</label><input id="txtEmail" type="email" />
+    </div>
+
+    @*<label>Number 1:</label><input type="number" />
+        <label>Number 1:</label><input type="number" />*@
+    <div>
+        <button name="Submit" onclick="alert('Your form is submitted successfully.');">Submit</button>
+    </div>
+    @*<div>
+            <label>Output:</label><input type="text" disabled />
+        </div>*@
+</form>
